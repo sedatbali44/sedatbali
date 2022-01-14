@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Pet Owner Management</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+</head>
+<body>
+	<div  class="container my-2">
+		<h1>Owner List</h1>
+		<a th:href="@{/showNewOwnerForm}" class="btn btn-primary btn-sm mb-3">Add New Pet Owner</a>
+		
+		<table border="1" class="table table-striped table-responsive-md">
+			<thead>
+				<tr>
+					<th>Owner Full Name</th>
+					<th>Owner's Pets</th>
+					<th>Phone</th>
+					<th>Email</th>
+					<th>Address</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="owners :${listOwners}">
+					<td th:text="${owners.fullname}"></td>
+					<td th:text="${owners.ownerPets}"></td>
+					<td th:text="${owners.phone}"></td>
+					<td th:text="${owners.email}"></td>
+					<td th:text="${owners.address}"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
