@@ -1,2 +1,0 @@
-# sedatbali
-software engineer
