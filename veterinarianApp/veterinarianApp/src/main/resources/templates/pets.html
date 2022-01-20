@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Pet Management</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+</head>
+
+<body>
+	<div  class="container my-2">
+		<h1  style="text-align:center">Pet List</h1>
+		<form th:action="@{/selectedPet}" align="center" method="GET">
+				<input id="txtSearch" type="text" placeholder="Pet type" name="keyword">
+				<button type="submit" class="btn btn-success">Search</button>
+		</form>
+		<a th:href="@{/showNewPetForm}" class="btn btn-primary btn-sm mb-3">Add New Pet</a>
+		<a th:href="@{/owner}" class="btn float-right btn-warning btn-sm mb-3">Go to Owner List</a>
+		
+		<table border="1" class="table table-striped table-responsive-md">
+			<thead>
+				<tr>
+					<th>Pet id</th>
+					<th>Owner</th>
+					<th>Type</th>
+					<th>Breed</th>
+					<th>Age</th>
+					<th>Description</th>
+					<th>Edit</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="pets:${listPets}">
+					<td th:text="${pets.id}"></td>
+					<td th:text="${pets.owner}"></td>
+					<td th:text="${pets.type}"></td>
+					<td th:text="${pets.breed}"></td>
+					<td th:text="${pets.age}"></td>
+					<td th:text="${pets.description}"></td>
+					<td><a th:href="@{/showFormForUpdatePet/{id}(id=${pets.id})}" class="btn btn-info">Update</a>
+					   <a th:href="@{/deletePet/{id}(id=${pets.id})}" class="btn btn-danger">Delete</a> 
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
