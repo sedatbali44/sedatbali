@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: beyer
- * Date: 27.11.2018
- * Time: 10:25
- */
+
 
 namespace Mocca;
 
