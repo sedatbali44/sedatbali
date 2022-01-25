@@ -10,23 +10,23 @@ import veterinarianApp.Repository.PetRepository;
 
 
 @Service
-public class PetServiceImplement implements PetService {
+public class PetServiceImplement  {
 
 	@Autowired
 	private PetRepository petRepository;
 	
-	@Override
+
 	public List<Pets> getAllPets() {
 		
 		return petRepository.findAll();
 	}
 
-	@Override
+
 	public void savePets(Pets pets) {
 		this.petRepository.save(pets);	
 	}
 
-	@Override
+	
 	public Pets getPetByid(long id) {
 		Optional<Pets> optional = petRepository.findById(id);
 		Pets pets = null;
@@ -38,12 +38,12 @@ public class PetServiceImplement implements PetService {
 		    return pets;
 	}
 
-	@Override
+	
 	public void deletePetByid(long id) {
 		this.petRepository.deleteById(id);	
 	}
 
-	public List<Pets>  getPetByKeyword(String keyword) {
+	public List<Pets>  getPetWithKeyword(String keyword) {
 		
 		   return  petRepository.getPetByKeyword(keyword);
 				

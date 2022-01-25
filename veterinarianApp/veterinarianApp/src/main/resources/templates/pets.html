@@ -13,7 +13,7 @@
 	<div  class="container my-2">
 		<h1  style="text-align:center">Pet List</h1>
 		<form th:action="@{/selectedPet}" align="center" method="GET">
-				<input id="txtSearch" type="text" placeholder="Pet type" name="keyword">
+				<input id="txtSearch" type="text" th:value="${keyword}"  placeholder="Pet type" name="keyword">
 				<button type="submit" class="btn btn-success">Search</button>
 		</form>
 		<a th:href="@{/showNewPetForm}" class="btn btn-primary btn-sm mb-3">Add New Pet</a>

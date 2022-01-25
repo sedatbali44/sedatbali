@@ -12,8 +12,7 @@ import veterinarianApp.Model.Owners;
 @Repository
 public interface OwnerRepository extends JpaRepository<Owners, Long> {
 
-
-	@Query(value="SELECT * FROM owners o WHERE o.owner_fullname LIKE %:keyword%",nativeQuery = true)
-	List<Owners> getByKeyword(@Param("keyword") String keyword);
-
+	 @Query(value = "SELECT *  FROM owners o WHERE o.owner_fullname LIKE %:keyword% ", nativeQuery = true)
+	 List<Owners> findByKeyword(@Param("keyword") String keyword);
+	
 }

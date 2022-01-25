@@ -7,24 +7,21 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import veterinarianApp.Model.Owners;
-import veterinarianApp.Service.OwnerService;
 import veterinarianApp.Service.OwnerServiceImplement;
-
+import java.util.List;
 
 
 @Controller
 public class OwnerController {
-  
-	@Autowired(required=true)
-	private OwnerService ownerService;
 	
 	@Autowired(required=true)
 	private OwnerServiceImplement ownerServiceImplement;
 	
 	@GetMapping("/owner")
 	public String viewOwnerPage(Model model) {
-		model.addAttribute("listOwners", ownerService.getAllOwners());
+		model.addAttribute("listOwners", ownerServiceImplement.getAllOwners());
 		return "owners"; 	
 	} 
 	
@@ -36,35 +33,35 @@ public class OwnerController {
 	}
 	@PostMapping("/saveOwner") 
 	public String saveOwners (@ModelAttribute("owners") Owners owners) {
-		ownerService.saveOwners(owners);
+		ownerServiceImplement.saveOwners(owners);
 		return "redirect:/owner"; 
 	}
 
 	
 	@GetMapping("/showFormForUpdate/{id}")
 	public String showFormForUpdate(@PathVariable(value="id") long id,Model model) { 
-		Owners owners = ownerService.getOwnerByid(id);
+		Owners owners = ownerServiceImplement.getOwnerByid(id);
 		model.addAttribute("owners", owners);
 		return "update_owner";
 	}
 	//deleteOwner
 	@GetMapping("/deleteOwner/{id}")
 	public String deleteOwner(@PathVariable(value="id") long id) { 
-		this.ownerService.deleteOwnerByid(id);
+		this.ownerServiceImplement.deleteOwnerByid(id);
 		return "redirect:/owner"; 
 	}
 	
 	
-	@GetMapping("/selectedOwner")
-	public String viewOwner(Model model,String keyword) {
-		if(keyword != null ) { 
-			model.addAttribute("owners",ownerServiceImplement.getByKeyword(keyword));
-		} else  { 
-		  model.addAttribute("listOwners",ownerService.getAllOwners());
+	@RequestMapping("/selectedOwner")
+	public String viewOwner(Owners owners,Model model,String keyword) {
+		if(keyword == null ) { 
+		   model.addAttribute("listOwners",ownerServiceImplement.getAllOwners()); 
+		} else { 
+			 List<Owners> listOwners = ownerServiceImplement.getByKeyword(keyword);
+			   model.addAttribute("listOwners", listOwners); 
 		}
-		return "owners"; 	
+		return "owners";	
 	} 
- 
 	
 	
 }

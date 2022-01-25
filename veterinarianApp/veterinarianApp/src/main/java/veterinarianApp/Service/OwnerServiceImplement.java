@@ -10,32 +10,28 @@ import veterinarianApp.Model.Owners;
 import veterinarianApp.Repository.OwnerRepository;
 
 @Service
-public class OwnerServiceImplement implements OwnerService {
+public class OwnerServiceImplement  {
 
 	@Autowired
 	private OwnerRepository ownerRepository;
 	
 	
-	public List<Owners>  getByKeyword(String keyword) {
-			
-	   return ownerRepository.getByKeyword(keyword);
-			
-    }
+	public List<Owners> getByKeyword(String keyword){
+		  return ownerRepository.findByKeyword(keyword);
+	}
 	
-	
-	@Override
 	public List<Owners> getAllOwners() {
 		
 		return ownerRepository.findAll();
 		//get All pet owners
 	}
 
-	@Override
+	
 	public void saveOwners(Owners owners) {
 		this.ownerRepository.save(owners);
 	}
 
-	@Override
+	
 	public Owners getOwnerByid(long id) {
 		Optional<Owners> optional = ownerRepository.findById(id);
 		Owners owners = null;
@@ -47,7 +43,7 @@ public class OwnerServiceImplement implements OwnerService {
 		    return owners;
      }
 
-	@Override
+	
 	public void deleteOwnerByid(long id) {
 		this.ownerRepository.deleteById(id);
 		

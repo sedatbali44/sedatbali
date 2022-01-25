@@ -14,8 +14,9 @@
 		<h1 style="text-align:center">Owner List</h1>
 
 		<form th:action="@{/selectedOwner}" align="center" method="GET">
-				<input id="txtSearch" type="text" placeholder="Pet Owner Name" name="keyword">
+				<input type="text" name="keyword" th:value="${keyword}"  placeholder="Find by Owner Name" size="30" >
 				<button type="submit" class="btn btn-success">Search</button>
+	
 		</form>
 		<a th:href="@{/showNewOwnerForm}" class="btn btn-primary btn-sm mb-3">Add New Pet Owner</a>
 		<a th:href="@{/pets}" class="btn float-right btn-warning btn-sm mb-3">Go to Pet List</a>
