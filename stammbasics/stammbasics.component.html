@@ -1,0 +1,54 @@
+<div>
+    <mat-card class="matcard mat-elevation-z">
+        <div class="contentLeft">
+            <mat-list>
+                <mat-list-item>
+                    <button mat-stroked-button color="primary" class="button-1"
+                            routerLink="/stamm/customerStatus">
+                        <i class="material-icons">view_list</i>
+                        <span class="span-1">Kundenstatus</span>
+                    </button>
+                </mat-list-item>
+                <mat-list-item>
+                    <button mat-stroked-button color="primary" class="button-1"
+                            routerLink="/stamm/docCat">
+                        <i class="material-icons">view_list</i>
+                        <span class="span-1">Dokumentkategorien</span>
+                    </button>
+                </mat-list-item>
+                <mat-list-item>
+                    <button mat-stroked-button color="primary" class="button-1"
+                        routerLink="/stamm/accounting">
+                        <i class="material-icons">view_list</i>
+                        <span class="span-1">Konten</span>
+                    </button>
+                </mat-list-item>
+                <mat-list-item>
+                    <button mat-stroked-button color="primary" class="button-1"
+                            routerLink="/stamm/repairStatus">
+                        <i class="material-icons">view_list</i>
+                        <span class="span-1">Reparaturstatus</span>
+                    </button>
+                </mat-list-item>
+                <mat-list-item>
+                    <button mat-stroked-button color="primary" class="button-1"
+                            routerLink="/stamm/todoType">
+                        <i class="material-icons">view_list</i>
+                        <span class="span-1">Todo Typen</span>
+                    </button>
+                </mat-list-item>
+                <mat-list-item>
+                    <button mat-stroked-button color="primary" class="button-1"
+                            routerLink="/stamm/vo">
+                        <i class="material-icons">view_list</i>
+                        <span class="span-1">VO Nummern</span>
+                    </button>
+                </mat-list-item>
+            </mat-list>
+        </div>
+        <div class="contentRight">
+            <router-outlet></router-outlet>
+        </div>
+
+    </mat-card>
+</div>

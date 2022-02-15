@@ -1,0 +1,25 @@
+.button-1 {
+    width:100%;
+    text-align: left;
+}
+
+.contentLeft {
+    float:left;
+    width:20%;
+    /*background-color: #7fd2f1;*/
+    height: calc(100vh - 110px);
+
+}
+
+.contentRight {
+    float:left;
+    width:80%;
+    /*background-color: #f8ffbe;*/
+    height: calc(100vh - 110px);
+}
+
+.span-1 {
+    text-align: center;
+    width: 90%;
+    display: inline-block;
+}

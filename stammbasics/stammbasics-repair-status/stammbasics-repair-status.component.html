@@ -1,0 +1,99 @@
+<div class="div-1">
+    <mat-toolbar class="a-4">
+        <span>Reparaturstatus </span>
+        <button mat-stroked-button color="primary" class="btn-1" (click)="showEditDialogAsAdd()">
+            <i class="material-icons">add_circle_outline</i>
+        </button>
+    </mat-toolbar>
+    <div class="div-content">
+
+        <!---->
+        <!--Loader während Daten aus API geladen werden -->
+        <!---->
+        <div class="loaderDiv" *ngIf="contentLoading">
+            <span class="loaderSpan">Daten werden geladen</span>
+            <div class="loader"></div>
+        </div>
+
+        <!--
+        Wenn keine Daten vorhanden
+        -->
+        <div *ngIf="dataSource.data.length===0 && !contentLoading" class="div-2" >Es liegen keine Daten vor.</div>
+
+
+        <!--
+           Haupt-Tabelle mit Konten
+         -->
+        <div [hidden]="dataSource.data.length===0 || contentLoading">
+            <table mat-table cdkDropList cdkDropListLockAxis="y" [cdkDropListDisabled]="false" (cdkDropListDropped)="orderChange($event)" [dataSource]="dataSource" >
+                <ng-container matColumnDef="edit">
+                    <th mat-header-cell *matHeaderCellDef>Edit</th>
+                    <td mat-cell class="" *matCellDef="let status" >
+                        <a class="a-3" *ngIf="admin == '1'" (click)="showEditDialog(status)">
+                            <i class="material-icons-outlined icon-2">edit</i>
+                        </a>
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="drag">
+                    <th mat-header-cell *matHeaderCellDef></th>
+                    <td mat-cell *matCellDef style="cursor: move;" >
+                        <i class="material-icons">drag_indicator </i>
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="reihenfolge">
+                    <th mat-header-cell *matHeaderCellDef>Reihenfolge</th>
+                    <td mat-cell class="" *matCellDef="let status" >{{ status.repstatus_order }}</td>
+                </ng-container>
+
+                <ng-container matColumnDef="text">
+                    <th mat-header-cell *matHeaderCellDef>Text</th>
+                    <td mat-cell class="cell-1" *matCellDef="let status" >{{ status.repstatus_text }}</td>
+                </ng-container>
+
+                <ng-container matColumnDef="wert">
+                    <th mat-header-cell *matHeaderCellDef>Wert</th>
+                    <td mat-cell class="cell-1" *matCellDef="let status" >{{ status.repstatus_value }}</td>
+                </ng-container>
+
+                <ng-container matColumnDef="icon">
+                    <th mat-header-cell *matHeaderCellDef>Icon</th>
+                    <td mat-cell class="" *matCellDef="let status" >
+                        <ng-container *ngIf="status.repstatus_icon">
+                            <img [src]="status.iconSrc" alt="icon" width="30px" />
+                            <a class="a-3" *ngIf="admin=='1' && status.repstatus_icon"
+                               matTooltip="Icon löschen" (click)="deleteIcon(status)">
+                                <i class="material-icons-outlined icon-4">delete</i>
+                            </a>
+                        </ng-container>
+
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="abgeschlossen">
+                    <th mat-header-cell *matHeaderCellDef>Abgeschlossen</th>
+                    <td mat-cell class="" *matCellDef="let status" >
+                        <mat-checkbox (change)="toggleFinished(status)" [checked]="status.repstatus_abgeschlossen == '1'"></mat-checkbox>
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="del">
+                    <th mat-header-cell *matHeaderCellDef>Del</th>
+                    <td mat-cell  *matCellDef="let status" >
+                        <a class="a-3" *ngIf="admin=='1'"
+                           matTooltip="Konto löschen" (click)="showDeleteDialog(status)">
+                            <i class="material-icons-outlined icon-3">delete</i>
+                        </a>
+                    </td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true "></tr>
+                <tr mat-row  cdkDrag [ngClass]="{'highlight': index%2 == 1}" *matRowDef="let row; columns: displayedColumns; let index = index"></tr>
+            </table>
+        </div>
+    </div>
+    <div class="d-3" [hidden]="dataSource.data.length===0 || contentLoading">
+        <mat-paginator [pageSizeOptions]="[100,250, 500, 1000]" showFirstLastButtons></mat-paginator>
+    </div>
+</div>
