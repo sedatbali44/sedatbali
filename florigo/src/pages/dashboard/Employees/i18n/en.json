@@ -1,0 +1,40 @@
+{
+  "title": "Employees",
+  "events": {
+    "new": "New Employee",
+    "new_occasion": "New Occasion",
+    "update": "Update Employee",
+    "delete": "Delete Employee"
+    
+  },
+  "buttons":{
+    "new": "New Employee",
+    "new_occasion": "New Occasion",
+    "update": "Update Employee",
+    "delete": "Delete Employee",
+    "updatePassword":"Change Password"
+  },
+  "headCells":{
+    "title":"Title",
+    "name":"First Name",
+    "lastname":"Last Name",
+    "email":"Email",
+    "status": "Status",
+    "date": "Created Date",
+    "process":"Process",
+    "image":"Profile Image",
+    "ftdCode":"FTD Code",
+    "bloomnetCode":"BloomNet Code",
+    "createdAt":"Create Date",
+    "updatedAt":"Update Date"
+  },
+  "messages":{
+    "created":"Employee Created",
+    "updated":"Employee Updated",
+    "deleted":"Employee Deleted",
+    "updatedPassword":"Updated Password"
+  },
+  "fields": {
+    "options": "Employee Options"
+  }
+}

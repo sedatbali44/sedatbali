@@ -1,0 +1,46 @@
+{
+
+    "title": "Sales Agent Reports",
+    "titles":{
+        "totalRefund":"Total Refund",
+        "reason": "Reason",
+        "city": "City",
+        "state": "State",
+        "zipCode":"Zip Code",
+        "completed": "Order Completed",
+        "totals": {
+            "refund": "Total Refund",
+            "order": "Total Order"
+        } 
+    },
+    "headCells":{
+        "reason": "Reason",
+        "city": "City",
+        "state": "State",
+        "zipCode":"Zip Code",
+        "completed": "Order Completed",
+        "totals": {
+            "refund": "Total Refund",
+            "order": "Total Order"
+        },
+        "firstname": "First Name",
+        "lastname": "Last Name",
+        "completedOrderCount":"Completed Orders Count",
+        "actions&flags":"Actions & Flags",
+        "price":"Price",
+        "created_at":"Created At",
+        "order_date":"Order Date",
+        "order_number":"Order Number",
+        "updated_at":"Updated At",
+        "order_tag":"Order Tag",
+        "order_status":"Order Status",
+        "order_id":"Order Id",
+        "process":"Process",
+        "title":"Title",
+        "permission":"Permission",
+        "option":"Option",
+        "status": "Status",
+        "date": "Created Date",
+        "creditcardlast6digits": "Credit Card Last 5 Digits"
+    }
+}  

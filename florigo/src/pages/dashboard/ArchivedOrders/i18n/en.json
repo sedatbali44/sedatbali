@@ -1,0 +1,36 @@
+{
+  "title": "Archived Orders",
+  "titles": {
+    "totalRefund": "Total Refund",
+    "reason": "Reason",
+    "city": "City",
+    "state": "State",
+    "zipCode": "Zip Code",
+    "completed": "Order Completed",
+    "totals": {
+      "refund": "Total Refund",
+      "order": "Total Order"
+    }
+  },
+  "headCells": {
+    "assignedTo":"Assigned To",
+    "email": "Email",
+    "completed":"Completed",
+    "uncompleted":"Uncompleted",
+    "pendingforpayment":"Pending for payment",
+    "customerName":"Customer Name",
+    "customerState":"Customer State",
+    "orderDate": "Order Date",
+    "status":"Status",
+    "recepientInfo":"Recepient Info",
+    "state": "State",
+    "zipCode": "Zip Code",
+    "code": "State Code",
+    "totals": {
+      "refund": "Total Refund",
+      "order": "Total Order",
+      "amount":"Total Amount"
+    }
+  }
+}
+  

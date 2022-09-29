@@ -1,0 +1,13 @@
+.globalTableCell {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.globalTableCell span {
+  position: relative;
+}
+
+.globalTableCell span svg {
+  position: absolute;
+  left: 100%;
+}

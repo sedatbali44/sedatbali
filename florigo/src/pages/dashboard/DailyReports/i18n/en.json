@@ -1,0 +1,17 @@
+{
+    "title": "Daily Reports",
+    "titles":{
+        "new_order": "New Order",
+        "sent_teleflora": "Sent To Teleflora",
+        "sent_florist": "Send to Florist",
+        "sent_local": "Send to Local Florist",
+        "local_order": "Local Order",
+        "completed": "Completed",
+        "order_completed": "Order Completed",
+        "totals": {
+            "refund": "Total Refund",
+            "order": "Total Order"
+        }
+    }
+}
+  

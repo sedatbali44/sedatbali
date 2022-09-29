@@ -1,0 +1,31 @@
+{
+    "title": "Roles",
+    "events": {
+      "add": "Add Role",
+      "update": "Update Role",
+      "delete": "Delete Role"
+    },
+    "buttons":{
+      "new": "New Role",
+      "update": "Update Role",
+      "delete": "Delete Role",
+      "save"  :"Save"
+    },
+    "headCells":{
+      "title":"Title",
+      "permission":"Permission",
+      "option":"Option",
+      "status": "Status",
+      "date": "Created Date",
+      "process":"Process"
+    },
+    "messages":{
+      "created":"Role Created",
+      "updated":"Role Updated",
+      "deleted":"Role Deleted"
+    },
+    "fields": {
+      "options": "Role Options"
+    }
+  }
+  

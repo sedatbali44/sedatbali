@@ -1,0 +1,30 @@
+{
+  "title": "Teams",
+  "events": {
+    "new": "New Team",
+    "update": "Update Team",
+    "delete": "Delete Team"
+    
+  },
+  "buttons":{
+    "new": "New Team",
+    "update": "Update Team",
+    "delete": "Delete Team",
+    "updatePassword":"Password Updated"
+  },
+  "headCells":{
+    "title":"Title",
+    "date": "Created Date",
+    "process":"Process",
+    "status" :"Status"
+  },
+  "messages":{
+    "created":"Team Created",
+    "updated":"Team Updated",
+    "deleted":"Team Deleted",
+    "updatedPassword":"Updated Password"
+  },
+  "fields": {
+    "options": "Team Options"
+  }
+}

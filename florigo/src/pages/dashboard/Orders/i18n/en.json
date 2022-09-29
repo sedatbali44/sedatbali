@@ -1,0 +1,23 @@
+{
+  "title": "Orders",
+  "detected_changes": "Some changes have been detected. Please save or cancel!",
+  "has": "Below are the {{role}}'s permissions",
+  "events": {
+    "add": "Add Department",
+    "update": "Update Department",
+    "delete": "Delete Department"
+  },
+  "fields": {
+    "options": "Department Options"
+  },
+  "status": {
+    "open": "Open",
+    "new_order": "New Order",
+    "charge_back": "Charge Back",
+    "fraud": "Fraud",
+    "closed": "Closed",
+    "pending": "Pending",
+    "cancelled": "Cancelled",
+    "refund": "Refund"
+  }
+}

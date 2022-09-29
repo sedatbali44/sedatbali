@@ -1,0 +1,13 @@
+{
+  "title": "Permissions",
+  "detected_changes": "Some changes have been detected. Please save or cancel!",
+  "has": "Below are the {{role}}'s permissions",
+  "events": {
+    "add": "Add Department",
+    "update": "Update Department",
+    "delete": "Delete Department"
+  },
+  "fields": {
+    "options": "Department Options"
+  }
+}

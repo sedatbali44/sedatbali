@@ -1,0 +1,47 @@
+{
+  "title": "Products",
+  "events": {
+    "new": "New Product",
+    "update": "Update Product",
+    "delete": "Delete Product"
+    
+  },
+  "buttons":{
+    "new": "New Product",
+    "update": "Update Product",
+    "delete": "Delete Product"
+  },
+  "headCells":{
+    "name":"Name",
+    "vendor":"Vendor",
+    "price":"Price",
+    "quantity":"Quantity",
+    "description":"Description",
+    "image":"Image",
+    "category":"Category",
+    "subcategory":"Subcategory",
+    "createdAt":"Created At",
+    "updatedAt":"Updated At",
+    "actions":"Actions",
+    "edit":"Edit",
+    "delete":"Delete",
+    "view":"View",
+    "back":"Back",
+    "save":"Save",
+    "cancel":"Cancel",
+    "add":"Add",
+    "email":"Email",
+    "status": "Status",
+    "date": "Created Date",
+    "process":"Process"
+  },
+  "messages":{
+    "created":"Product Created",
+    "updated":"Product Updated",
+    "deleted":"Product Deleted"
+  },
+  "fields": {
+    "options": "Product Options"
+  }
+}
+  
