@@ -1,0 +1,30 @@
+{
+  "title": "Departments",
+  "events": {
+    "add": "Add Department",
+    "update": "Update Department",
+    "delete": "Delete Department"
+  },
+  "buttons":{
+    "new": "New Department",
+    "update": "Update Department",
+    "delete": "Delete Department",
+    "save"  :"Save"
+  },
+  "headCells":{
+    "title":"Title",
+    "permission":"Permission",
+    "option":"Option",
+    "status": "Status",
+    "date": "Created Date",
+    "process":"Process"
+  },
+  "messages":{
+    "created":"Department Created",
+    "updated":"Department Updated",
+    "deleted":"Department Deleted"
+  },
+  "fields": {
+    "options": "Department Options"
+  }
+}

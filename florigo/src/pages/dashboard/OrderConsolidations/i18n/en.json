@@ -1,0 +1,26 @@
+
+{
+    "title": "Order Consolidations",
+    "titles":{
+        "ftd": "Ftd",
+        "bloomnet": "Bloomnet",
+        "local_order": "Local Order",
+        "completed": "Order Completed",
+        "totals": {
+            "refund": "Total Refund",
+            "order": "Total Order"
+        }
+    },
+    "headCells":{
+        "amount":"Amount",
+        "florist":"Florist",
+        "vendor":"Vendor",
+        "logs":"Logs",
+        "status": "Status",
+        "date": "Date",
+        "florist_state":"Florist State",
+        "cc_last4_digits":"CC Last 4 Digits"
+ 
+      }
+}
+    

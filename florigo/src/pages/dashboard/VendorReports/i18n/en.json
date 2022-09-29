@@ -1,0 +1,36 @@
+{
+    "title": "Vendor Reports",
+    "titles":{
+        "new_order": "New Order",
+        "sent_teleflora": "Sent To Teleflora",
+        "sent_florist": "Send to Florist",
+        "sent_local": "Send to Local Florist",
+        "local_order": "Local Order",
+        "completed": "Completed",
+        "order_completed": "Order Completed",
+        "totals": {
+            "refund": "Total Refund",
+            "order": "Total Order"
+        }
+    },
+    "headCells":{
+    "firstname": "First Name",
+    "lastname": "Last Name",
+    "completedOrderCount":"Completed Orders Count",
+    "actions&flags":"Actions & Flags",
+    "price":"Price",
+    "created_at":"Created At",
+    "order_date":"Order Date",
+    "updated_at":"Updated At",
+    "order_tag":"Order Tag",
+    "order_status":"Order Status",
+    "order_id":"Order Id",
+    "process":"Process",
+    "title":"Title",
+    "permission":"Permission",
+    "option":"Option",
+    "status": "Status",
+    "date": "Created Date" 
+    }
+}
+  

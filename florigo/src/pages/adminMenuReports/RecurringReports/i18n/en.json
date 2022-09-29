@@ -1,0 +1,33 @@
+{
+    "title": "Recurring Reports",
+    "titles": {
+      "totalRefund": "Total Refund",
+      "reason": "Reason",
+      "city": "City",
+      "state": "State",
+      "zipCode": "Zip Code",
+      "completed": "Order Completed",
+      "totals": {
+        "refund": "Total Refund",
+        "order": "Total Order"
+      }
+    },
+    "headCells": {
+      "email": "Email",
+      "customerName":"Customer Name",
+      "customerState":"Customer State",
+      "orderDate": "Order Date",
+      "reason": "Reason",
+      "city": "City",
+      "state": "State",
+      "zipCode": "Zip Code",
+      "completed": "Order Completed",
+      "code": "State Code",
+      "totals": {
+        "refund": "Total Refund",
+        "order": "Total Order",
+        "amount":"Total Amount"
+      }
+    }
+  }
+    

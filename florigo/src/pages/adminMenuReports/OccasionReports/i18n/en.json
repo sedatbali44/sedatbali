@@ -1,0 +1,22 @@
+{
+
+    "title": "Occasion Reports",
+    "titles":{
+        
+        "occasion":"Occasion",
+        "totals": {
+            "refund": "Total Refund",
+            "order": "Total Order",
+            "amount":"Total Amount"
+        } 
+    },
+    "headCells":{
+        "occasion":"Occasion",
+        "totals": {
+            "refund": "Total Refund",
+            "order": "Total Order",
+            "amount":"Total Amount"
+        
+    }
+} 
+}     

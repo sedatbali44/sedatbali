@@ -1,0 +1,46 @@
+{
+    "title": "Florists",
+    "titles":{
+      "totalactivecompany":"Total Active Company",
+      "totalarchivedcompany":"Total Archived Company",
+      "totalflorists":"Total Florists"
+    },
+    "events": {
+      "new": "New Florist",
+      "update": "Update Florist",
+      "delete": "Delete Florist"
+      
+    },
+    "buttons":{
+      "new": "New Florist",
+      "update": "Update Florist",
+      "delete": "Delete Florist"
+    },
+    "headCells":{
+      "contacts":"Contacts",
+      "actions":"Actions",
+      "phone":"Phone",
+      "type":"Type",
+      "company":"Company",
+      "email":"Email",
+      "status": "Status",
+      "date": "Created Date",
+      "process":"Process",
+      "api"    :"api test",
+      "vendorId":"Vendor id",
+      "floristId":"Florist id",
+      "totalPrice":"Total Price",
+      "floristName": "Florist Name",
+      "floristPhone": "Florist Phone",
+      "vendorOrderId":"Vendor Order id"
+    },
+    "messages":{
+      "created":"Florist Created",
+      "updated":"Florist Updated",
+      "deleted":"Florist Deleted"
+    },
+    "fields": {
+      "options": "Florist Options"
+    }
+  }
+  

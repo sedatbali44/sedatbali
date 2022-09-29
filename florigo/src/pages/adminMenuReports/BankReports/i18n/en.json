@@ -1,0 +1,17 @@
+{
+    "title": "Bank Reports",
+    "headCells":{
+       
+      "amount":"Amount",
+      "tag"   :"Tag"
+     
+    },
+    "titles":{
+        "TDbank":"TD Bank",
+        "chase":"Chase",
+        "esquire":"Esquire Bank",
+        "TDbank2":"TD Bank 2"
+    }
+   
+}
+  

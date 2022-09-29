@@ -1,0 +1,8 @@
+.globalTableCell span {
+  position: relative;
+}
+
+.globalTableCell span svg {
+  position: absolute;
+  left: 100%;
+}

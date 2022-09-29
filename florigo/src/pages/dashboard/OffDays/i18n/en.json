@@ -1,0 +1,54 @@
+{
+    "title": "offdays",
+    "events": {
+      "new": "New Offday",
+      "update": "Update Offday",
+      "delete": "Delete Offday"
+      
+    },
+    "buttons":{
+      "new": "Add Offday",
+      "update": "Update Offday",
+      "delete": "Delete Offday"
+    },
+    "headCells":{
+      "discount_code": "Discount Code",
+      "type": "Type",
+      "start_date": "Start Date",
+      "end_date": "End Date",
+      "use_limit": "Use Limit",
+      "used_count": "Used Count",
+      "updated_at": "Updated Date",
+      "name":"Name",
+      "vendor":"Vendor",
+      "price":"Price",
+      "quantity":"Quantity",
+      "description":"Description",
+      "image":"Image",
+      "category":"Category",
+      "subcategory":"Subcategory",
+      "createdAt":"Created At",
+      "updatedAt":"Updated At",
+      "actions":"Actions",
+      "edit":"Edit",
+      "delete":"Delete",
+      "view":"View",
+      "back":"Back",
+      "save":"Save",
+      "cancel":"Cancel",
+      "add":"Add",
+      "email":"Email",
+      "status": "Status",
+      "date": "Created Date",
+      "process":"Process"
+    },
+    "messages":{
+      "created":"Offday Created",
+      "deleted":"Offday Deleted"
+      
+    },
+    "fields": {
+     
+    }
+  }
+    
