@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const EMPLOYEE_API_BASE_URL = "http://localhost:4050/api/v1/employees";
+const EMPLOYEE_API_BASE_URL = "http://localhost:3040/api/v1/users";
 
 //http://localhost:9090/owner
 // "http://localhost:4050/api/v1/employees";

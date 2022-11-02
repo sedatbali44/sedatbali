@@ -4,12 +4,12 @@ import employeeService from '../services/employeeService';
 class Employee extends Component {
 
     state = {
-        employees: []
+        users: []
     };
 
     componentDidMount() {
         employeeService.getAllEmployees().then((res) => {
-            this.setState({employees: res.data});
+            this.setState({users: res.data});
         });
     }
     render() {
@@ -33,14 +33,14 @@ class Employee extends Component {
                             </thead>
                             <tbody>
                                 {
-                                    this.state.employees.map(
-                                        employee => 
-                                        <tr key = {employee.id}>
-                                             <td> {employee.name} </td>   
-                                             <td> {employee.surname}</td>
-                                             <td> {employee.email}</td>
-                                             <td> {employee.phone}</td>
-                                             <td> {employee.position}</td>
+                                    this.state.users.map(
+                                        users => 
+                                        <tr key = {users.id}>
+                                             <td> {users.name} </td>   
+                                             <td> {users.surname}</td>
+                                             <td> {users.email}</td>
+                                             <td> {users.phone}</td>
+                                             <td> {users.department}</td>
                                             
                                         </tr>
                                     )
