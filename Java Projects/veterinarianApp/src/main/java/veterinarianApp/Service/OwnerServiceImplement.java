@@ -28,7 +28,7 @@ public class OwnerServiceImplement  {
 
 	
 	public void saveOwners(Owners owners) {
-		this.ownerRepository.save(owners);
+			this.ownerRepository.save(owners);
 	}
 
 	
